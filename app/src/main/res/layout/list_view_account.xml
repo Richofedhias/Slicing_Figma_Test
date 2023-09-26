@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_primary_15"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tV_name_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter"
+            android:text="Newtronic Account"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tV_no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter"
+            android:text="Account No : 1234 124 124 124"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter"
+            android:text="Balance"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tV_nominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter"
+            android:text="RP 28.000.000"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="27dp">
+            
+            <Button
+                android:id="@+id/btn_pindah_dana"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="Pindah Dana"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:background="@drawable/bg_white_25"
+                android:backgroundTint="@color/white"
+                app:backgroundTint="@color/white"
+                app:rippleColor="@color/white"
+                android:fontFamily="@font/inter"
+                android:textAllCaps="false"/>
+
+            <LinearLayout
+                android:id="@+id/btn_qr"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_white_25"
+                android:gravity="center|left"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_qr"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QRIS"
+                    android:textSize="16sp"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/inter"
+                    android:textStyle="normal"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            
+        </LinearLayout>
+
+<TextView
+    android:id="@+id/tV_expired"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Expiry Date 12/28"
+    android:textColor="@color/white"
+    android:textStyle="normal"
+    android:textSize="16sp"
+    android:fontFamily="@font/inter"
+    android:layout_marginTop="40dp"/>
+
+    </LinearLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
